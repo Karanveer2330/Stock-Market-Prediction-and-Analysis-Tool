@@ -1,4 +1,4 @@
-<h2> 🚀 &nbsp;Stock Market Prediction and Analysis Tool</h2>
+<h2>  &nbsp;Stock Market Prediction and Analysis Tool</h2>
 
 
 ![image](https://github.com/user-attachments/assets/6e917ceb-5699-42b8-aaec-80eda08752bd)
