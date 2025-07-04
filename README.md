@@ -46,6 +46,8 @@ After installation and configuration, run the application using:
 python app.py  # Or the name of your main application file
 
 The application will typically launch a web interface, which you can access in your browser (e.g., http://127.0.0.1:5000 or http://localhost:8501).
+
+
 Navigating the Dashboard
 The dashboard is designed for intuitive interaction and is divided into several key areas:
    * Stock Selection: Use the search bar to enter a stock ticker symbol (e.g., AAPL, GOOGL) and select a historical date range for analysis.
@@ -55,17 +57,23 @@ The dashboard is designed for intuitive interaction and is divided into several 
    * Trend Forecasting: Analyze the underlying trend and seasonality components of the stock price, as identified by Facebook Prophet.
    * Accounting Data: Access key financial statements (Income Statement, Balance Sheet, Cash Flow) and important financial ratios for the selected company.
    * Relevant News: Browse a feed of the latest news headlines and summaries related to the stock.
+
+     
 Technical Details
 Data Sources
    * Historical Stock Data: Sourced from reliable financial APIs (e.g., Yahoo Finance, Alpha Vantage).
    * Real-time Data: Fetched from real-time stock data providers (e.g., Alpha Vantage, Twelve Data).
    * Accounting Data: Retrieved from comprehensive financial data APIs (e.g., Financial Modeling Prep).
    * News Data: Obtained from news APIs (e.g., NewsAPI, GNews API).
+
+     
 Machine Learning Models
    * Random Forest (for Stock Movement Prediction): A robust ensemble learning method that builds multiple decision trees and merges their predictions to improve accuracy and control overfitting. Features include lagged prices, volume, and various technical indicators.
    * Long Short-Term Memory (LSTM) Neural Network (for Future Stock Price Forecasting): A specialized type of recurrent neural network (RNN) capable of learning long-term dependencies, making it highly effective for time series prediction. It processes sequences of historical stock prices to forecast future values.
    * Facebook Prophet (for Trend Forecasting): An open-source forecasting tool developed by Facebook, designed for forecasting univariate time series data. It decomposes time series into trend, seasonality, and holiday components, providing intuitive and customizable forecasts.
 Architecture (High-Level)
+
+
 The application typically follows a client-server architecture:
    * Frontend: Handles the user interface and interactive data visualizations (e.g., built with Streamlit, Flask with HTML/CSS/JS, or Dash).
    * Backend: Manages data retrieval from external APIs, processes data, performs machine learning model inference, and serves data to the frontend.
