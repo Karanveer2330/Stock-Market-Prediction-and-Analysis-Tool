@@ -1,4 +1,5 @@
-#Stock Market Prediction and Analysis Tool
+
+<span style="font-size: 1.5em;">Stock Market Prediction and Analysis Tool</span>
 ![image](https://github.com/user-attachments/assets/6e917ceb-5699-42b8-aaec-80eda08752bd)
 
 ![image](https://github.com/user-attachments/assets/51a0790d-b5ca-4f1e-9ad2-7bdd0595862a)
